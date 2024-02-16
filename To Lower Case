@@ -1,5 +1,15 @@
 class Solution {
     public String toLowerCase(String s) {
-        return s.toLowerCase();
+//   return s.toLowerCase();
+String str="";
+        for(char c:s.toCharArray()){
+            if(Character.isUpperCase(c)){
+                str=str+(char)(c+32);
+            }else{
+                str=str+c;
+            }
+        }
+        return str;
+
     }
 }
